@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    @font-face {
+        font-family: "counter-demo";
+        src: url("/fonts/CounterDemo.woff2") format("woff2");
+    }
+
+}
+@layer utilities {
+
+    .custom-background {
+        background:
+                linear-gradient(-90deg, rgba(255,255,255, .05) 1px, transparent 1px),
+                linear-gradient(rgba(255,255,255, .05) 1px, transparent 1px),
+                linear-gradient(-90deg, rgba(255,255,255, .04) 1px, transparent 1px),
+                linear-gradient(rgba(255,255,255, .04) 1px, transparent 1px),
+                linear-gradient(transparent 3px, #01112E 3px, #01112E 78px, transparent 78px),
+                linear-gradient(-90deg, #aaa 1px, transparent 1px),
+                linear-gradient(-90deg, transparent 3px, #01112E 3px, #01112E 78px, transparent 78px),
+                linear-gradient(#aaa 1px, transparent 1px),
+                #01112E;
+        background-size:
+                4px 4px,
+                4px 4px,
+                80px 80px,
+                80px 80px,
+                80px 80px,
+                80px 80px,
+                80px 80px,
+                80px 80px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
